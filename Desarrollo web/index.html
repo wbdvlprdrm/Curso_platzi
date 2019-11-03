@@ -1,75 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
-</head>
-<body>
-    <header>
-        <div>
-            <figure>
-                <img src="images/logo.png" alt="logo">
-            </figure>
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="/portfolio">Portfolio</a>
-                </li>
-                <li>
-                <a href="#events">Experience</a>
-                </li>
-                <li>
-                <a href="#contact">Let's work together</a>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Leonidas Esteban</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <figure class="logo" >
+          <img src="images/logo.png" alt="Logo de http://leonidasesteban.com" />
+        </figure>
+        <nav class="menu" >
+          <ol>
+            <li>
+              <a class="link" href="./portafolio/index.html">Portafolio</a>
             </li>
-            </ul>
+            <li>
+              <a class="link" href="#eventos">Experiencia</a>
+            </li>
+            <li>
+              <a class="link" href="#contacto">Trabajemos juntos</a>
+            </li>
+          </ol>
         </nav>
+      </div>
     </header>
-    <section>
-        <h1>
-            Hey I'm <strong> Ramiro Henriquez</strong>  <strong>Javascript Developer</strong> <br> With passion for <strong> learning</strong> </br> and sharing knowledge!!!
-        </h1>
-        <img src="images/hero.jpg" alt="main image" width="500px" height="300px">
+    <section class="hero" >
+      <h1>
+        Hola! Soy <strong>Leonidas Esteban</strong> Desarrollador <br/> <strong>Javascript</strong> con <br> pasión por la <strong>enseñanza</strong>
+      </h1>
+      <img src="images/hero.jpg" width="500" height="300" alt="imagen principal del sitio"> 
     </section>
-    <section id="portfolio">
-        <h2>Portfolio (Most recent Projects)</h2>
-    </section>
-    <section>
-        <article>
-            <h3>Platzi</h3>
-            <h6>React</h6>
-            <p><small><strong>Date:</strong></small> 22/08/2019</p>
-            <p><small><strong>Watch it on::</strong>www.platzi.com/native</small></p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, non?
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit distinctio facilis quos dicta minus dolorem placeat.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit ea expedita rerum, error id rem aut officiis veniam laborum mollitia.
-            </p>
-            <img src="images/platzi-video-react-native.png" alt="React project">
+    <section id="portafolio"  class="portfolio" >
+      <h2>Portafolio (Proyectos Destacados)</h2>
+      <article class="project" >
+        <h3 class="project-title" >Platzi Video</h3>
+        <h6 class="project-course" >React Native / React</h6>
+        <p class="project-date" ><small><strong>Fecha:</strong> 01/07/2018</small></p>
+        <p class="project-url" ><small><strong>Pueds verlo en::</strong> www.platzi.com/native</small></p>
+        <p class="project-description" >Platzi Video fue el resultado de 3 meses de trabajo
+            para crear la mejor app para enseñar el funcionamiento
+            de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de nevegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
+            <figure class="project-imageContainer" >
+                <img   class="project-image" width="500" src="images/platzi-video-react-native.png" alt="prouyecto del curso de React Native">
+            </figure>
         </article>
     </section>
-    <section id="events">
-        <h2>More about my Experience!</h2>
-    <article>
-        <figure> 
-            <img src="images/platzi-conf.jpg" alt="" width="500" height="">
+    <section id="eventos">
+      <h2>Más sobre mi experiencia</h2>
+      <article class="event" >
+        <figure class="event-imageContainer" >
+          <img  class="event-image" src="images/platzi-conf.jpg" width="500" />
         </figure>
-        <h3>Platziconf 2019</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque et explicabo doloremque, facilis ipsa doloribus.
-            <a>Watch Talk</a>
-        </p>
-    </article>    
+        <h3>PlatziConf México 2018</h3>
+        <p>El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida de constante aprendizaje.</p>
+        <a href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
+      </article>
     </section>
-    <section id="contact">
-        <form action="/suscription/">
-            <h3>Let's create something togheter!</h3>
-            <input type="text" placeholder="Leave your email" id="email">
-            <button>Send</button>
-        </form>
+    <section id="contacto">
+      <form action="/suscripcion/">
+        <h3>¿Creamos algo juntos?</h3>
+        <input type="text" placeholder="Déjame tu email" id="email">
+        <button>Enviar</button>
+      </form>
     </section>
-    <section>seccion Contactos</section>
     <footer>footer</footer>
-</body>
+  </body>
 </html>
