@@ -10,7 +10,8 @@ gris claro = #626262
 background gris = #1b2127 */
 
 body {
-    font-family: 'Source Sans Pro', sans-serif
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0px;
 }
 
 h1, 
@@ -28,12 +29,43 @@ h1 {
     font-size: 40px;
     line-height: 1.5em;
     letter-spacing: -.2px;
+    color: white;
+    margin: 100px 150px 70px 30px;
     /* text-transform: uppercase;
     text-decoration: underline; */
 }
 
+h1 strong {
+    color: #026fff;
+}
+
 .hero {
     height: 300px;
+    background-image: url(../images/hero.jpg);
+    background-color: #1b2127;
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.portfolio {
+    background: #fafafa;
+}
+
+.project {
+    /* border-top: 10px solid red;
+    border-right: 10px solid green;
+    border-left: 10px solid orange;
+    border-bottom: 10px solid pink; 
+    border-color: red;
+    border-width: 15px;
+    border-style: solid; */
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background: white;
+
 }
 
 .project-details {
@@ -48,9 +80,42 @@ h1 {
 .header {
     background-color: #1b2127;;
     color: white;
+    display: flex;
+    height: 90px;
+    justify-content: space-between;
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure {
+    margin: 0;
 }
 
 .header a {
+    display: flex;
     color: white;
     text-decoration: none;
+    height: inherit;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.menu {
+    height: inherit;
+}
+
+.header ol {
+    display: flex;
+    height: inherit;
+
+}
+
+.header ol li {
+    height: inherit;
+    display: flex;
 }
