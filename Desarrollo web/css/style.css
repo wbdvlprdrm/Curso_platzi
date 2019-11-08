@@ -63,6 +63,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 
 }
 
@@ -91,6 +92,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 
 }
 .project-course,
@@ -128,9 +130,10 @@ h2 {
     background-color: #1b2127;;
     color: white;
     display: flex;
-    height: 90px;
+    height: 70px;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 ol,
@@ -145,12 +148,8 @@ figure {
 }
 
 .header a {
-    display: flex;
     color: white;
     text-decoration: none;
-    height: inherit;
-    align-items: center;
-    padding: 0 10px;
 }
 
 .menu {
@@ -165,15 +164,22 @@ figure {
 
 .header ol li {
     height: inherit;
-    display: flex;
 }
 
+
+.header a {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
+  }
 .footer {
     background-color: #1b2127;
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer img {
@@ -233,6 +239,7 @@ vertical-align: middle;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .social {
@@ -296,11 +303,52 @@ vertical-align: middle;
 }
 
 .wrapper {
-    width: 1000px;
+    max-width: 1000px;
+    /* width: 100%; */
+    flex: 1;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
     height: inherit;
     flex-wrap: inherit;
+}
+
+/*Desktop First Technique*/
+
+
+@media screen and (max-width: 1024px) {
+
+}
+
+
+@media screen and (max-width: 767px) {
+    .header {
+        display: block;
+        height: auto;
+    }
+    .header ol {
+        display: block;
+    }
+    .header ol li {
+        height: 50px;
+    }
+    .header a {
+    justify-content: center;
+    height: 40px;
+    font-size: 2em;
+    text-decoration: underline;
+    margin-bottom: .5em;
+    }
+    .header img {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480) {
+
+}
+
+@media screen and (max-width: 320px) {
+
 }
